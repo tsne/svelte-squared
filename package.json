@@ -1,0 +1,39 @@
+{
+	"name": "svelte-squared",
+	"version": "0.0.1",
+	"author": "tsne",
+	"license": "MIT",
+	"homepage": "https://github.com/tsne/svelte-squared",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/tsne/svelte-squared.git"
+	},
+	"scripts": {
+		"dev": "svelte-kit dev",
+		"build": "svelte-kit build",
+		"package": "svelte-kit package",
+		"preview": "svelte-kit preview",
+		"check": "svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch"
+	},
+	"devDependencies": {
+		"@mszu/pixi-ssr-shim": "^1.0.1",
+		"@pixi/core": "^6.2.1",
+		"@pixi/display": "^6.2.1",
+		"@pixi/graphics": "^6.2.1",
+		"@pixi/interaction": "^6.2.1",
+		"@pixi/math": "^6.2.1",
+		"@pixi/prepare": "^6.2.1",
+		"@pixi/sprite": "^6.2.1",
+		"@pixi/text": "^6.2.1",
+		"@sveltejs/adapter-node": "next",
+		"@sveltejs/kit": "next",
+		"svelte": "^3.46.2",
+		"svelte-check": "^2.3.0",
+		"svelte-preprocess": "^4.10.2",
+		"svelte2tsx": "^0.4.14",
+		"tslib": "^2.3.1",
+		"typescript": "^4.4.3"
+	},
+	"type": "module"
+}
