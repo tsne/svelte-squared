@@ -1,6 +1,6 @@
 # svelte-squared
 
-A small [PixiJS](pixijs.com) component library for Svelte.
+A small [PixiJS](https://pixijs.com) component library for Svelte.
 
 ## License
 
