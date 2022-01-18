@@ -1,8 +1,6 @@
 <script lang="ts">
 	import {onDestroy, onMount} from "svelte";
-	import {Renderer, BatchRenderer} from "@pixi/core";
-	import {InteractionManager} from "@pixi/interaction";
-	import {Prepare} from "@pixi/prepare";
+	import {Renderer} from "@pixi/core";
 	import type {Rectangle} from "@pixi/math";
 	import {registerRoot} from "$lib/internal/context";
 	import type {Dimension, PanOptions, ZoomOptions} from "./_viewbox";
@@ -25,12 +23,6 @@
 	export let panOptions: PanOptions = null;
 	export let zoom: number = 1;
 	export let zoomOptions: ZoomOptions = null;
-
-
-	// TODO: put in index.js?
-	Renderer.registerPlugin("batch", BatchRenderer);
-	Renderer.registerPlugin("prepare", Prepare);
-	Renderer.registerPlugin("interaction", InteractionManager);
 
 
 	let screen: Dimension = {width: 0, height: 0};

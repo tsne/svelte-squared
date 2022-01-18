@@ -16,8 +16,7 @@
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch"
 	},
-	"devDependencies": {
-		"@mszu/pixi-ssr-shim": "^1.0.1",
+	"dependencies": {
 		"@pixi/core": "^6.2.1",
 		"@pixi/display": "^6.2.1",
 		"@pixi/graphics": "^6.2.1",
@@ -25,7 +24,10 @@
 		"@pixi/math": "^6.2.1",
 		"@pixi/prepare": "^6.2.1",
 		"@pixi/sprite": "^6.2.1",
-		"@pixi/text": "^6.2.1",
+		"@pixi/text": "^6.2.1"
+	},
+	"devDependencies": {
+		"@mszu/pixi-ssr-shim": "^1.0.1",
 		"@sveltejs/adapter-node": "next",
 		"@sveltejs/kit": "next",
 		"svelte": "^3.46.2",

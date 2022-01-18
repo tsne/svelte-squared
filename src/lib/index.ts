@@ -26,3 +26,13 @@ export {onFrame} from "./util/lifecycle";
 export {invalidator} from "./util/context";
 export type {Transition, TransitionConfig} from "./internal/transition";
 export {transition} from "./util/transition";
+
+
+
+import {Renderer, BatchRenderer} from "@pixi/core";
+import {InteractionManager} from "@pixi/interaction";
+import {Prepare} from "@pixi/prepare";
+
+Renderer.registerPlugin("batch", BatchRenderer);
+Renderer.registerPlugin("prepare", Prepare);
+Renderer.registerPlugin("interaction", InteractionManager);
